@@ -1,6 +1,7 @@
 from pathlib import Path
 import json
 from getpass import getpass
+
 ROOT_PATH = Path(__file__).parents[1]
 
 class Utils:
@@ -20,8 +21,6 @@ class Utils:
         self.generate_json_cfg()
         return self.read_configuration()
 
-
-
     def generate_json_cfg(self):
         """todo"""
         username = input("Instagram username: ")
@@ -34,3 +33,11 @@ class Utils:
 
         with open(self.cfgs, "w", encoding="utf-8") as file:
             json.dump(cfgs, file)
+
+    def write_to_txt(self):
+        
+
+
+    def log(self, log_string: str):
+
+
